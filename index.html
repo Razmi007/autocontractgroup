@@ -6,21 +6,15 @@
   <title>Auto Contract Group</title>
   <style>
     :root {
-      --primary: #D4A373;   /* Warm beige-gold */
-      --accent: #B85C38;    /* Earthy copper */
-      --light: #FAF3E0;     /* Cream background */
-      --text: #2E2E2E;      /* Deep graphite */
-      --dark: #735C48;      /* Espresso */
+      --primary: #D4A373;
+      --accent: #B85C38;
+      --light: #FAF3E0;
+      --text: #2E2E2E;
+      --dark: #735C48;
     }
-    * {
-      margin: 0; padding: 0; box-sizing: border-box;
-      font-family: "Segoe UI", Roboto, sans-serif;
-    }
-    body {
-      background: var(--light);
-      color: var(--text);
-      line-height: 1.6;
-    }
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: "Segoe UI", Roboto, sans-serif; }
+    body { background: var(--light); color: var(--text); line-height: 1.6; }
+
     header {
       background: linear-gradient(135deg, var(--primary), var(--accent));
       color: white;
@@ -28,39 +22,82 @@
       text-align: center;
       box-shadow: 0 4px 10px rgba(0,0,0,0.15);
     }
-    header h1 {
-      font-size: 2rem;
-      letter-spacing: 1px;
-      font-weight: 600;
-    }
-    nav {
-      margin-top: 0.5rem;
-    }
+    header h1 { font-size: 2rem; letter-spacing: 1px; font-weight: 600; }
+    nav { margin-top: 0.5rem; }
     nav a {
-      color: #fff;
-      text-decoration: none;
-      margin: 0 12px;
-      font-weight: 500;
-      transition: opacity 0.2s;
+      color: #fff; text-decoration: none; margin: 0 12px;
+      font-weight: 500; transition: opacity 0.2s;
     }
     nav a:hover { opacity: 0.8; }
 
-    main {
-      padding: 3rem 1rem;
-      text-align: center;
-      max-width: 900px;
-      margin: auto;
-    }
-    main h2 {
-      font-size: 1.9rem;
-      color: var(--dark);
-      margin-bottom: 1rem;
-    }
-    main p {
-      font-size: 1.1rem;
-      margin-bottom: 2rem;
-      color: var(--text);
-    }
+    main { padding: 3rem 1rem; text-align: center; max-width: 900px; margin: auto; }
+    main h2 { font-size: 1.9rem; color: var(--dark); margin-bottom: 1rem; }
+    main p { font-size: 1.1rem; margin-bottom: 2rem; color: var(--text); }
 
     .btn {
-      background: linear-gradie
+      background: linear-gradient(135deg, var(--accent), var(--primary));
+      color: white; padding: 0.9rem 2rem; border: none; border-radius: 8px;
+      font-size: 1rem; cursor: pointer; box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      transition: all 0.3s;
+    }
+    .btn:hover { transform: translateY(-3px); box-shadow: 0 6px 15px rgba(0,0,0,0.25); }
+
+    section {
+      margin: 4rem 0; padding: 2rem 1rem; background: white;
+      border-radius: 10px; box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    }
+    section h3 { color: var(--accent); margin-bottom: 1rem; }
+    footer {
+      background: var(--dark); color: #f9f9f9; text-align: center;
+      padding: 1.2rem; font-size: 0.9rem; margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Auto Contract Group</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#platform">Platform</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="home">
+    <h2>Vehicle Inspection Management Platform</h2>
+    <p>
+      Auto Contract Group provides a secure, centralized system for
+      <strong>dealers, warranty providers, and inspection companies</strong>
+      to submit and manage inspection requests efficiently.
+    </p>
+    <button class="btn" onclick="window.location.href='mailto:info@autocontractgroup.com'">Get Started</button>
+
+    <section id="platform">
+      <h3>Our Platform</h3>
+      <p>
+        Designed to simplify and modernize the inspection process, our platform streamlines
+        every step—from request submission to report completion. Future features will
+        include integrated photo verification, VIN decoding, and AI-powered diagnostics.
+      </p>
+    </section>
+
+    <section>
+      <h3>Coming Soon</h3>
+      <p>
+        • Partner login and dashboard<br>
+        • Real-time inspection tracking<br>
+        • Secure document uploads<br>
+        • AI validation for faster approvals
+      </p>
+    </section>
+
+    <section id="contact">
+      <h3>Contact Us</h3>
+      <p>Interested in partnering or requesting inspections?<br>
+      📩 <a href="mailto:info@autocontractgroup.com">info@autocontractgroup.com</a></p>
+    </section>
+  </main>
+
+  <footer>© 2025 Auto Contract Group LLC — All Rights Reserved</footer>
+</body>
+</html>
